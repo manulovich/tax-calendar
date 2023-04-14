@@ -1,0 +1,3 @@
+PySide6
+notify-py
+cx_freeze

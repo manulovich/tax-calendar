@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Налоговый календарь</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../assets/resources.qrc">
+    <normaloff>:/icons/icon.png</normaloff>:/icons/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="content">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="new_reminder">
+       <attribute name="title">
+        <string>Новое напоминание</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="new_reminder_container"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="quote">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>&quot;Экономист – это человек, который знает о деньгах больше, чем люди, у которых есть деньги.&quot; -  Фрэнк Лош</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="reminder_list">
+       <attribute name="title">
+        <string>Список напоминаний</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QScrollArea" name="reminder_list_scroll">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>817</width>
+             <height>290</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="reminder_list_container"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>843</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="settings">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="app"/>
+   </widget>
+   <addaction name="settings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="app">
+   <property name="text">
+    <string>Приложение</string>
+   </property>
+  </action>
+  <action name="preference">
+   <property name="text">
+    <string>Оформление</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../assets/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
